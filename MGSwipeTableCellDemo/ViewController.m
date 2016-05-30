@@ -7,12 +7,16 @@
 //
 
 #import "ViewController.h"
-
+#import "tableviewcontroller.h"
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
+- (IBAction)DFA:(id)sender {
+    tableviewcontroller *vc = [[tableviewcontroller alloc] init];
+    [self presentViewController:vc animated:YES completion:nil];
+ }
 
 - (void)viewDidLoad {
     [super viewDidLoad];

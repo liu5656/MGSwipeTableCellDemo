@@ -13,6 +13,9 @@
 		2AEC04F71CDB304900995B20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AEC04F51CDB304900995B20 /* Main.storyboard */; };
 		2AEC04F91CDB304900995B20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AEC04F81CDB304900995B20 /* Assets.xcassets */; };
 		2AEC04FC1CDB304900995B20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AEC04FA1CDB304900995B20 /* LaunchScreen.storyboard */; };
+		2AEC05051CDB30BB00995B20 /* tableviewcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AEC05041CDB30BB00995B20 /* tableviewcontroller.m */; };
+		2AEC050A1CDB31C200995B20 /* MGSwipeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AEC05071CDB31C200995B20 /* MGSwipeButton.m */; };
+		2AEC050B1CDB31C200995B20 /* MGSwipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AEC05091CDB31C200995B20 /* MGSwipeTableCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		2AEC04F81CDB304900995B20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2AEC04FB1CDB304900995B20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2AEC04FD1CDB304900995B20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AEC05031CDB30BA00995B20 /* tableviewcontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tableviewcontroller.h; sourceTree = "<group>"; };
+		2AEC05041CDB30BB00995B20 /* tableviewcontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tableviewcontroller.m; sourceTree = "<group>"; };
+		2AEC05061CDB31C200995B20 /* MGSwipeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSwipeButton.h; sourceTree = "<group>"; };
+		2AEC05071CDB31C200995B20 /* MGSwipeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSwipeButton.m; sourceTree = "<group>"; };
+		2AEC05081CDB31C200995B20 /* MGSwipeTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSwipeTableCell.h; sourceTree = "<group>"; };
+		2AEC05091CDB31C200995B20 /* MGSwipeTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSwipeTableCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +67,14 @@
 		2AEC04EB1CDB304900995B20 /* MGSwipeTableCellDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2AEC05061CDB31C200995B20 /* MGSwipeButton.h */,
+				2AEC05071CDB31C200995B20 /* MGSwipeButton.m */,
+				2AEC05081CDB31C200995B20 /* MGSwipeTableCell.h */,
+				2AEC05091CDB31C200995B20 /* MGSwipeTableCell.m */,
 				2AEC04EF1CDB304900995B20 /* AppDelegate.h */,
 				2AEC04F01CDB304900995B20 /* AppDelegate.m */,
+				2AEC05031CDB30BA00995B20 /* tableviewcontroller.h */,
+				2AEC05041CDB30BB00995B20 /* tableviewcontroller.m */,
 				2AEC04F21CDB304900995B20 /* ViewController.h */,
 				2AEC04F31CDB304900995B20 /* ViewController.m */,
 				2AEC04F51CDB304900995B20 /* Main.storyboard */,
@@ -150,8 +165,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2AEC04F41CDB304900995B20 /* ViewController.m in Sources */,
+				2AEC050B1CDB31C200995B20 /* MGSwipeTableCell.m in Sources */,
 				2AEC04F11CDB304900995B20 /* AppDelegate.m in Sources */,
+				2AEC050A1CDB31C200995B20 /* MGSwipeButton.m in Sources */,
 				2AEC04EE1CDB304900995B20 /* main.m in Sources */,
+				2AEC05051CDB30BB00995B20 /* tableviewcontroller.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +284,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MGSwipeTableCellDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.lj.com.MGSwipeTableCellDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -277,6 +296,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MGSwipeTableCellDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.lj.com.MGSwipeTableCellDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
